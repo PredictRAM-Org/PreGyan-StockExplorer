@@ -100,7 +100,6 @@ def show_low_Dividend_Yield_stocks():
 # Streamlit UI
 def main():
     st.title("Stock Data Query System")
-    
     query = st.text_input("Enter your query (e.g., 'show high beta top 10 stocks'):")
     
     if query:
@@ -139,4 +138,23 @@ def main():
         elif 'show high cagr stocks' in query:
             result = show_high_CAGR_stocks()
             st.write("Top 10 stocks with high CAGR:")
-            st.write(result
+            st.write(result)
+        
+        elif 'show low cagr stocks' in query:
+            result = show_low_CAGR_stocks()
+            st.write("Top 10 stocks with low CAGR:")
+            st.write(result)
+        
+        elif 'show high debt_to_equity_ratio stocks' in query:
+            result = show_high_Debt_to_Equity_Ratio_stocks()
+            st.write("Top 10 stocks with high Debt to Equity Ratio:")
+            st.write(result)
+        
+        elif 'show low debt_to_equity_ratio stocks' in query:
+            result = show_low_Debt_to_Equity_Ratio_stocks()
+            st.write("Top 10 stocks with low Debt to Equity Ratio:")
+            st.write(result)
+        
+        elif 'show high pe_ratio stocks' in query:
+            result = show_high_PE_Ratio_stocks()
+            st.write("Top 10 stocks with high P/E
