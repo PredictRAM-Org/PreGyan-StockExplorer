@@ -158,3 +158,46 @@ def main():
         elif 'show high pe_ratio stocks' in query:
             result = show_high_PE_Ratio_stocks()
             st.write("Top 10 stocks with high P/E
+            st.write(result)
+        
+        elif 'show low pe_ratio stocks' in query:
+            result = show_low_PE_Ratio_stocks()
+            st.write("Top 10 stocks with low P/E Ratio:")
+            st.write(result)
+        
+        elif 'show high pb_ratio stocks' in query:
+            result = show_high_PB_Ratio_stocks()
+            st.write("Top 10 stocks with high P/B Ratio:")
+            st.write(result)
+        
+        elif 'show low pb_ratio stocks' in query:
+            result = show_low_PB_Ratio_stocks()
+            st.write("Top 10 stocks with low P/B Ratio:")
+            st.write(result)
+        
+        elif 'show high eps stocks' in query:
+            result = show_high_EPS_stocks()
+            st.write("Top 10 stocks with high EPS:")
+            st.write(result)
+        
+        elif 'show low eps stocks' in query:
+            result = show_low_EPS_stocks()
+            st.write("Top 10 stocks with low EPS:")
+            st.write(result)
+        
+        elif 'show high dividend_yield stocks' in query:
+            result = show_high_Dividend_Yield_stocks()
+            st.write("Top 10 stocks with high Dividend Yield:")
+            st.write(result)
+        
+        elif 'show low dividend_yield stocks' in query:
+            result = show_low_Dividend_Yield_stocks()
+            st.write("Top 10 stocks with low Dividend Yield:")
+            st.write(result)
+        
+        else:
+            st.write("Invalid query. Please try again.")
+
+# Main function
+if __name__ == "__main__":
+    main()
