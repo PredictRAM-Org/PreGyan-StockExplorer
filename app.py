@@ -157,7 +157,7 @@ def main():
         
         elif 'show high pe_ratio stocks' in query:
             result = show_high_PE_Ratio_stocks()
-            st.write("Top 10 stocks with high P/E
+            st.write("Top 10 stocks with high P/E:")
             st.write(result)
         
         elif 'show low pe_ratio stocks' in query:
